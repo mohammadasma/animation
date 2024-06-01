@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 1px solid black;
+
+            height: 200px;
+            width: 200px;
+            position: relative;
+            margin: 50px;
+            left: 600px;
+
+        }
+
+        .one {
+            position: absolute;
+            height: 100px;
+            width: 20px;
+            background-color: red;
+            bottom: 0;
+            animation-name: first;
+            animation-duration: 1s;
+            animation-direction: alternate reverse;
+            animation-iteration-count: infinite;
+            left: 10px;
+
+
+        }
+
+        @keyframes first {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 100px;
+            }
+        }
+
+        .two {
+            position: absolute;
+            height: 250px;
+            width: 20px;
+            background-color: red;
+            bottom: 0;
+            margin-left: 10px;
+            left: 30px;
+            animation-name: first;
+            animation-duration: 1s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+
+
+        }
+
+        .three {
+            position: absolute;
+            height: 300px;
+            width: 20px;
+            background-color: rgb(0, 34, 255);
+            bottom: 0;
+            margin-left: 60px;
+            left: 10px;
+            animation-name: first;
+            animation-duration: 1s;
+            animation-direction: alternate reverse;
+            animation-iteration-count: infinite;
+        }
+
+
+
+
+        .four {
+            position: absolute;
+            height: 400px;
+            width: 20px;
+            background-color: rgb(0, 255, 13);
+            bottom: 0;
+            margin-left: 50px;
+            left: 50px;
+            animation-name: first;
+            animation-duration: 1s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+
+        .five {
+            position: absolute;
+            height: 400px;
+            width: 20px;
+            background-color: rgb(255, 234, 0);
+            bottom: 0;
+            margin-left: 80px;
+            left: 50px;
+            animation-name: first;
+            animation-duration: 1s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+        }
+
+        body {
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Music animation</h1>
+    <div><img src="./2.jpeg"></div>
+    <audio controls>
+        <source src="./bang bro.mp3">
+    </audio><br>
+    <audio controls autoplay muted>
+        <source src="./bang bro.mp3">
+    </audio>
+    <div class="parent">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+    </div>
+</body>
+
+</html>
